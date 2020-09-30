@@ -8,6 +8,8 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
+    print("login")
+    print(client.user.name)
     print(client.user.id)
     print("ready")
     game = discord.Game("시간표봇 - made by 10411 박준석/                   명령어 도움말:!Q")
