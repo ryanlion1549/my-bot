@@ -38,5 +38,5 @@ async def on_message(message):
         if randomNum == 3:
             await message.channel.send("고상현 이 미친놈아")
 
-
-client.run("NzYwMzI0NTM0MDY1ODIzODM1.X3KZZw.U65qnzJ3V9R2UJI4CJp70I0hS6I")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
